@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Máy Tính</h1>
+<body>
+<input type="number" placeholder="a" id="1">
+<input type="number" placeholder="b" id="2">
+<button onclick="Cộng()">Cộng + </button>
+<button onclick="Trừ()">Trừ - </button>
+<button onclick="Nhân()">Nhân * </button>
+<button onclick="Chia()">Chia / </button>
+<p id="kq"> Kết quả : </p>
+
+<script>
+    function Cộng() {
+        let a=document.getElementById("1").value;
+        let b=document.getElementById("2").value;
+        let c=(+a)+(+b)
+        document.getElementById("kq").innerHTML=c
+    }
+    function Trừ() {
+        let a=document.getElementById("1").value;
+        let b=document.getElementById("2").value;
+        let d=(+a)-(+b)
+        document.getElementById("kq").innerHTML=d
+    }
+    function Nhân() {
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        let e = (+a) * (+b)
+        document.getElementById("kq").innerHTML =e
+    }
+    function Chia() {
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        let h = (+a) / (+b)
+        document.getElementById("kq").innerHTML =h
+    }
+</script>
+</body>

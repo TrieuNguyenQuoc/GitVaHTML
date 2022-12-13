@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+<body>
+<canvas id="myCamvat" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+</body>
+<script>
+    class Rectangle {
+        constructor(x,y,width,height,color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+        render(){
+            let ctx = document.getElementById("myCanvas").getContext('2d');
+            ctx.beginPath();
+            ctx.rect(rectangle.x,rectangle.y, rectangle.width, rectangle.height);
+            console.log(rectangle.x);
+            ctx.fillStyle = rectangle.color;
+            ctx.fill();
+        }
+    }
+    let rectangle = new Rectangle(10,10,150,100,"#ea08e9");
+    rectangle.render();
+
+</script>
+</html><!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+</body>
+<script>
+    class Rectangle {
+        constructor(x,y,width,height,color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+        render(){
+            let ctx = document.getElementById("myCanvas").getContext('2d');
+            ctx.beginPath();
+            ctx.rect(rectangle.x,rectangle.y, rectangle.width, rectangle.height);
+            console.log(rectangle.x);
+            ctx.fillStyle = rectangle.color;
+            ctx.fill();
+        }
+    }
+    let rectangle = new Rectangle(10,10,150,100,"rgba(234,8,233,0.8)");
+    rectangle.render();
+
+</script>
+</html>
